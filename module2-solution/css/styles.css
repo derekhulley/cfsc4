@@ -6,8 +6,8 @@
 
 	/* box style */
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 
 	/* default colours */
 	background-color: #ABB2B9;
@@ -17,12 +17,8 @@ h1 {
 	margin-bottom: 15px;
 	text-align: center;
 }
-.box {
-	margin-bottom: 0px;
-}
 .menu-item {
 	border: 2px solid black;
-	margin: 10px;
 	background-color: #e0e0d1;
 }
 .menu-title  {
@@ -67,7 +63,12 @@ h1 {
 /* === Ignore redundant widths === */
 
 .row {
-  width: 100%;
+  	width: 100%;
+	padding: 0px 10px 0px 0px;
+}
+.cell {
+	margin: 10px 0px 0px 0px;
+	padding: 0px 0px 0px 10px;
 }
 
 /* Large */
@@ -98,5 +99,14 @@ h1 {
 	}
 	.col-md-6 {
 	width: 100%;
+	}
+}
+/* Small */
+@media (max-width: 767px) {
+	.cell {
+		margin-left: auto;
+		margin-right: auto;
+		min-width: 100px;
+		max-width: 400px;
 	}
 }
